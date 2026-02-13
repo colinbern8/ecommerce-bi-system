@@ -1,0 +1,13 @@
+database:
+  type: "sqlite"
+  name: "ecommerce"
+  
+anthropic:
+  api_key: "your-api-key-here"
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 2000
+
+paths:
+  reports: "reports/"
+  visualizations: "reports/visualizations/"
+  data: "data/"

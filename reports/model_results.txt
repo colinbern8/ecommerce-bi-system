@@ -1,0 +1,46 @@
+============================================================
+CHURN PREDICTION MODEL RESULTS
+============================================================
+
+Model type: LogisticRegression
+Parameters: random_state=42, max_iter=1000, class_weight='balanced'
+Timestamp: 2026-02-13 16:14:26
+
+----------------------------------------
+METRICS
+----------------------------------------
+Train accuracy:  0.7147
+Test accuracy:   0.6480
+ROC AUC:         0.7483
+
+----------------------------------------
+CONFUSION MATRIX
+----------------------------------------
+                Predicted
+                Active  Churned
+Actual Active       42      20
+       Churned      24      39
+
+----------------------------------------
+CLASSIFICATION REPORT
+----------------------------------------
+              precision    recall  f1-score   support
+
+      Active       0.64      0.68      0.66        62
+     Churned       0.66      0.62      0.64        63
+
+    accuracy                           0.65       125
+   macro avg       0.65      0.65      0.65       125
+weighted avg       0.65      0.65      0.65       125
+
+
+----------------------------------------
+INTERPRETATION
+----------------------------------------
+• Positive coefficients increase predicted churn probability.
+• Negative coefficients decrease predicted churn probability.
+• Balanced class_weight mitigates imbalance between Active and Churned.
+• ROC AUC > 0.5 indicates the model outperforms random guessing.
+• Review precision/recall for Active vs Churned based on business cost.
+
+============================================================
