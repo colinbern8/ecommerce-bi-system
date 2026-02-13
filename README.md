@@ -109,7 +109,7 @@ The system expects a relational schema with **customers**, **products**, **order
 
 ```bash
 # 1. Clone or copy the project and enter the project root
-cd "Data Analytics Project"
+cd "ecommerce-bi-system"
 
 # 2. Create a virtual environment (recommended)
 python -m venv venv
@@ -196,7 +196,7 @@ The pipeline will:
 ## Project Structure
 
 ```
-Data Analytics Project/
+ecommerce-bi-system/
 ├── main.py                 # Pipeline orchestrator
 ├── requirements.txt        # Pinned Python dependencies
 ├── README.md               # This file
